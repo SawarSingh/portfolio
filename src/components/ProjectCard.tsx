@@ -41,7 +41,7 @@ export function ProjectCard({ project }: { project: Project }) {
           ) : null}
         </div>
 
-        <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+        <p className="mt-2 line-clamp-4 flex-1 text-sm leading-relaxed text-muted-foreground">
           {project.summary}
         </p>
 

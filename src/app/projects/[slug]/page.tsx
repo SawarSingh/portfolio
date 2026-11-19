@@ -61,30 +61,75 @@ export default async function ProjectPage({
           </header>
 
           {project.image ? (
-            <div className="relative mt-10 aspect-[1200/630] overflow-hidden rounded-2xl border border-border bg-muted">
-              <Image
-                src={project.image}
-                alt={`${project.title} preview`}
-                fill
-                sizes="(max-width: 768px) 100vw, 768px"
-                className="object-cover"
-                priority
-              />
-            </div>
+            <figure className="mt-10">
+              <div className="relative aspect-[1200/630] overflow-hidden rounded-2xl border border-border bg-muted">
+                <Image
+                  src={project.image}
+                  alt={`${project.title} preview`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 768px"
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              {project.screenshotCaptions?.[0] ? (
+                <figcaption className="mt-3 text-center text-xs text-muted-foreground">
+                  {project.screenshotCaptions[0]}
+                </figcaption>
+              ) : null}
+            </figure>
           ) : null}
 
-          <div className="mt-10 space-y-4">
-            {project.description.map((paragraph) => (
-              <p
-                key={paragraph}
-                className="text-base leading-relaxed text-muted-foreground"
-              >
-                {paragraph}
-              </p>
-            ))}
+          <div className="mt-12 space-y-10">
+            {project.description.length > 0 ? (
+              <section>
+                <h2 className="text-sm font-medium">What I built</h2>
+                <div className="mt-4 space-y-4">
+                  {project.description.map((paragraph) => (
+                    <p
+                      key={paragraph}
+                      className="text-base leading-relaxed text-muted-foreground"
+                    >
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+              </section>
+            ) : null}
+
+            {project.techStack ? (
+              <section>
+                <h2 className="text-sm font-medium">Tech stack</h2>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                  {project.techStack}
+                </p>
+              </section>
+            ) : null}
+
+            {project.features?.length ? (
+              <section>
+                <h2 className="text-sm font-medium">Features</h2>
+                <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground marker:text-accent">
+                  {project.features.map((feature) => (
+                    <li key={feature}>{feature}</li>
+                  ))}
+                </ul>
+              </section>
+            ) : null}
+
+            {project.highlights?.length ? (
+              <section>
+                <h2 className="text-sm font-medium">Highlights</h2>
+                <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground marker:text-accent">
+                  {project.highlights.map((highlight) => (
+                    <li key={highlight}>{highlight}</li>
+                  ))}
+                </ul>
+              </section>
+            ) : null}
           </div>
 
-          <ul className="mt-8 flex flex-wrap gap-2">
+          <ul className="mt-10 flex flex-wrap gap-2">
             {project.tags.map((tag) => (
               <li
                 key={tag}
