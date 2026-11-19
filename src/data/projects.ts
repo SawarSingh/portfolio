@@ -84,21 +84,6 @@ export const projects: Project[] = [
       },
     ],
   },
-  {
-    slug: "hello-next",
-    title: "Hello Next",
-    summary:
-      "A minimal Next.js starter used as a launchpad for new apps and experiments.",
-    description: [
-      "A small, opinionated Next.js starter with TypeScript, Tailwind, and the App Router wired up. I use it to spin up new ideas without re-doing boilerplate.",
-    ],
-    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
-    year: 2025,
-    status: "in-progress",
-    links: [
-      { label: "GitHub", url: "https://github.com/your-username/hello-next" },
-    ],
-  },
 ];
 
 export function getProject(slug: string): Project | undefined {
