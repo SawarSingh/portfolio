@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Hello Next cover">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#0e7490"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+  <g fill="#67e8f9" font-family="Geist Mono, monospace" font-size="26" opacity="0.85">
+    <text x="80" y="360">import { app } from "next";</text>
+    <text x="80" y="404">export default app;</text>
+  </g>
+  <g fill="#ffffff" font-family="Geist, Arial, sans-serif">
+    <text x="80" y="150" font-size="64" font-weight="600">Hello Next</text>
+    <text x="80" y="205" font-size="28" fill="#a5f3fc">A minimal Next.js starter</text>
+  </g>
+</svg>
