@@ -97,15 +97,6 @@ export default async function ProjectPage({
               </section>
             ) : null}
 
-            {project.techStack ? (
-              <section>
-                <h2 className="text-sm font-medium">Tech stack</h2>
-                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                  {project.techStack}
-                </p>
-              </section>
-            ) : null}
-
             {project.features?.length ? (
               <section>
                 <h2 className="text-sm font-medium">Features</h2>

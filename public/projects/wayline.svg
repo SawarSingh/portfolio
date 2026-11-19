@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Wayline cover">
+  <defs>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a2a49"/>
+      <stop offset="0.5" stop-color="#0d1729"/>
+      <stop offset="1" stop-color="#070c16"/>
+    </linearGradient>
+    <radialGradient id="tealGlow" cx="85%" cy="-10%" r="70%">
+      <stop offset="0" stop-color="#4fd1a5" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#4fd1a5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blueGlow" cx="-10%" cy="15%" r="70%">
+      <stop offset="0" stop-color="#70b7ff" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#70b7ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#navy)"/>
+  <rect width="1200" height="630" fill="url(#tealGlow)"/>
+  <rect width="1200" height="630" fill="url(#blueGlow)"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M90 520 C 360 494 640 480 960 480" stroke="#70b7ff" stroke-opacity="0.38" stroke-width="26"/>
+    <path d="M90 440 C 360 414 640 400 960 400" stroke="#70b7ff" stroke-width="30"/>
+    <path d="M90 360 C 360 334 640 320 960 320" stroke="#4fd1a5" stroke-width="34"/>
+    <path d="M930 248 L1004 320 L930 392" stroke="#a7f3d0" stroke-width="34"/>
+  </g>
+  <g fill="#ffffff" font-family="Geist, Arial, sans-serif">
+    <text x="90" y="150" font-size="72" font-weight="600">Wayline</text>
+    <text x="90" y="205" font-size="28" fill="#a7f3d0">Every arrival, precisely timed.</text>
+  </g>
+</svg>
