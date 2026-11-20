@@ -3,6 +3,11 @@ export type ProjectLink = {
   url: string;
 };
 
+export type ProjectScreenshot = {
+  src: string;
+  caption: string;
+};
+
 export type Project = {
   slug: string;
   title: string;
@@ -10,7 +15,7 @@ export type Project = {
   description: string[];
   features?: string[];
   highlights?: string[];
-  screenshotCaptions?: string[];
+  screenshots?: ProjectScreenshot[];
   year: number;
   featured?: boolean;
   status?: "live" | "in-progress" | "archived";
@@ -46,13 +51,31 @@ export const projects: Project[] = [
       "Built a browser extension that bootstraps its own read-only token from the web session and mirrors logout.",
       "Deployed the web app to Railway with a persistent volume, installed the iOS app/widget on a physical device with automatic token sharing, and packaged the browser extension for distribution.",
     ],
-    screenshotCaptions: [
-      "The overview board: every saved route with its live drive time and leave-by time.",
-      "Route detail: a Weather-style ETA, leave-by, 7-day history, and today's intraday trend.",
-      "Route options: three route alternatives on dark map previews, with a pin to lock the corridor.",
-      "iPhone: the app beside its home-screen widget showing the next commute at a glance.",
-      "Chrome extension: current IST time, 'if you leave by…', and configurable reminder presets.",
-      "Settings: the route manager and the read-only widget token manager.",
+    screenshots: [
+      {
+        src: "/projects/wayline-overview.png",
+        caption: "Overview board: every saved route with its live drive time and leave-by time.",
+      },
+      {
+        src: "/projects/wayline-planner.png",
+        caption: "Departure planner: travel time by departure with the recommended leave-by.",
+      },
+      {
+        src: "/projects/wayline-mobile-overview.png",
+        caption: "iPhone overview: the next commute at a glance.",
+      },
+      {
+        src: "/projects/wayline-mobile-detail.png",
+        caption: "Route detail on mobile: live ETA, leave-by, and history.",
+      },
+      {
+        src: "/projects/wayline-widget.png",
+        caption: "Home-screen widget: next route, drive time, and on-time status.",
+      },
+      {
+        src: "/projects/wayline-extension.png",
+        caption: "Chrome extension: live drive time, leave-by, and reminder presets.",
+      },
     ],
     year: 2026,
     featured: true,

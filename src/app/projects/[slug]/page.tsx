@@ -72,12 +72,39 @@ export default async function ProjectPage({
                   priority
                 />
               </div>
-              {project.screenshotCaptions?.[0] ? (
+              {project.screenshots?.[0] ? (
                 <figcaption className="mt-3 text-center text-xs text-muted-foreground">
-                  {project.screenshotCaptions[0]}
+                  {project.screenshots[0].caption}
                 </figcaption>
               ) : null}
             </figure>
+          ) : null}
+
+          {project.screenshots?.length ? (
+            <section className="mt-12">
+              <h2 className="text-sm font-medium">Screenshots</h2>
+              <div className="mt-4 grid gap-6 sm:grid-cols-2">
+                {project.screenshots.map((shot) => (
+                  <figure
+                    key={shot.src}
+                    className="overflow-hidden rounded-xl border border-border bg-muted"
+                  >
+                    <div className="relative h-60 sm:h-72">
+                      <Image
+                        src={shot.src}
+                        alt={shot.caption}
+                        fill
+                        sizes="(max-width: 640px) 100vw, 384px"
+                        className="object-contain p-3"
+                      />
+                    </div>
+                    <figcaption className="border-t border-border px-4 py-3 text-xs leading-relaxed text-muted-foreground">
+                      {shot.caption}
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+            </section>
           ) : null}
 
           <div className="mt-12 space-y-10">
