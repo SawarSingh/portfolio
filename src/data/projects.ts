@@ -53,28 +53,20 @@ export const projects: Project[] = [
     ],
     screenshots: [
       {
-        src: "/projects/wayline-overview.png",
-        caption: "Overview board: every saved route with its live drive time and leave-by time.",
+        src: "/projects/wayline-overview.jpg",
+        caption: "Live overview board: every saved route with its drive time and leave-by time.",
       },
       {
-        src: "/projects/wayline-planner.png",
-        caption: "Departure planner: travel time by departure with the recommended leave-by.",
+        src: "/projects/wayline-detail.jpg",
+        caption: "Route detail: live ETA, leave-by, 7-day history, and on-time rate.",
       },
       {
-        src: "/projects/wayline-mobile-overview.png",
-        caption: "iPhone overview: the next commute at a glance.",
+        src: "/projects/wayline-settings.jpg",
+        caption: "Route manager and read-only widget token access.",
       },
       {
-        src: "/projects/wayline-mobile-detail.png",
-        caption: "Route detail on mobile: live ETA, leave-by, and history.",
-      },
-      {
-        src: "/projects/wayline-widget.png",
-        caption: "Home-screen widget: next route, drive time, and on-time status.",
-      },
-      {
-        src: "/projects/wayline-extension.png",
-        caption: "Chrome extension: live drive time, leave-by, and reminder presets.",
+        src: "/projects/wayline-mobile.jpg",
+        caption: "The commute board at phone width.",
       },
     ],
     year: 2026,
