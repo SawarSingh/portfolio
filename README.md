@@ -26,7 +26,7 @@ Everything you need to change lives in `src/data`:
 
 | File | What it controls |
 | --- | --- |
-| `src/data/profile.ts` | Name, role, tagline, bio, skills, email, social links |
+| `src/data/profile.ts` | Name, role, tagline, bio, email, social links |
 | `src/data/projects.ts` | The project list (cards + detail pages) |
 | `src/data/site.ts` | Your live site URL (metadata, sitemap, robots) |
 

@@ -14,7 +14,7 @@ Personal portfolio site. Next.js App Router, TypeScript, Tailwind v4.
 
 All content lives in `src/data`:
 
-- `profile.ts` — name, role, bio, skills, email, socials.
+- `profile.ts` — name, role, bio, email, socials.
 - `projects.ts` — the project list rendered on the homepage and detail pages.
 - `site.ts` — the canonical site URL (used for metadata, sitemap, robots).
 

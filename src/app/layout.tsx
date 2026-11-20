@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: `%s — ${profile.name}`,
   },
   description: profile.tagline,
-  keywords: [profile.name, profile.role, ...profile.skills],
+  keywords: [profile.name, profile.role],
   authors: [{ name: profile.name }],
   openGraph: {
     title: `${profile.name} — ${profile.role}`,
