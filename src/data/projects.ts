@@ -11,7 +11,6 @@ export type Project = {
   features?: string[];
   highlights?: string[];
   screenshotCaptions?: string[];
-  tags: string[];
   year: number;
   featured?: boolean;
   status?: "live" | "in-progress" | "archived";
@@ -39,7 +38,7 @@ export const projects: Project[] = [
       "Chrome extension that mirrors your web session and sends leave-by notifications at configurable lead times.",
     ],
     highlights: [
-      "Built a full-stack commute intelligence web app with Next.js, TypeScript, Tailwind, and SQLite.",
+      "Built a full-stack commute intelligence web app with live traffic, route history, and departure-time prediction.",
       "Integrated TomTom live traffic and historical snapshots to solve leave-by time from a user's arrival target.",
       "Designed a Weather-inspired, full-screen UI with swipeable route pages and semantic timing colors.",
       "Implemented email/password sessions plus Google/Apple OAuth with provider-verified emails.",
@@ -54,17 +53,6 @@ export const projects: Project[] = [
       "iPhone: the app beside its home-screen widget showing the next commute at a glance.",
       "Chrome extension: current IST time, 'if you leave by…', and configurable reminder presets.",
       "Settings: the route manager and the read-only widget token manager.",
-    ],
-    tags: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "SQLite",
-      "TomTom",
-      "Leaflet",
-      "Capacitor",
-      "Swift",
-      "Chrome MV3",
     ],
     year: 2026,
     featured: true,

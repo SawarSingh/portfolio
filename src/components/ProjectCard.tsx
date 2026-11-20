@@ -45,17 +45,6 @@ export function ProjectCard({ project }: { project: Project }) {
           {project.summary}
         </p>
 
-        <ul className="mt-4 flex flex-wrap gap-2">
-          {project.tags.map((tag) => (
-            <li
-              key={tag}
-              className="rounded-full border border-border bg-muted px-2.5 py-0.5 text-xs text-muted-foreground"
-            >
-              {tag}
-            </li>
-          ))}
-        </ul>
-
         {project.links.length > 0 ? (
           <div className="mt-5 flex flex-wrap gap-4 text-sm">
             {project.links.map((link) => (

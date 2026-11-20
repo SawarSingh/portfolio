@@ -40,7 +40,6 @@ Append an entry to the `projects` array:
   title: "My App",
   summary: "One-line description shown on the card.",
   description: ["Longer paragraph one.", "Longer paragraph two."],
-  tags: ["Next.js", "TypeScript"],
   year: 2026,
   status: "live",                 // "live" | "in-progress" | "archived"
   image: "/projects/my-app.png",  // put the file in public/projects/

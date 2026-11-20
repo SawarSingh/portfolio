@@ -120,17 +120,6 @@ export default async function ProjectPage({
             ) : null}
           </div>
 
-          <ul className="mt-10 flex flex-wrap gap-2">
-            {project.tags.map((tag) => (
-              <li
-                key={tag}
-                className="rounded-full border border-border bg-muted px-3 py-1 text-xs text-muted-foreground"
-              >
-                {tag}
-              </li>
-            ))}
-          </ul>
-
           {project.links.length > 0 ? (
             <div className="mt-10 flex flex-wrap gap-3">
               {project.links.map((link) => (
