@@ -27,7 +27,10 @@ export const profile: Profile = {
   resumeUrl: "",
   socials: [
     { label: "GitHub", url: "https://github.com/your-username" },
-    { label: "LinkedIn", url: "https://linkedin.com/in/your-username" },
+    {
+      label: "LinkedIn",
+      url: "https://www.linkedin.com/in/sawar-singh-04a08514b/",
+    },
     { label: "X", url: "https://x.com/your-username" },
   ],
 };
