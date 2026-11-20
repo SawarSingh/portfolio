@@ -10,31 +10,15 @@ export function About() {
         About
       </h2>
 
-      <div className="mt-8 grid gap-10 sm:grid-cols-3">
-        <div className="space-y-4 sm:col-span-2">
-          {profile.bio.map((paragraph) => (
-            <p
-              key={paragraph}
-              className="text-base leading-relaxed text-muted-foreground"
-            >
-              {paragraph}
-            </p>
-          ))}
-        </div>
-
-        <div>
-          <h3 className="text-sm font-medium text-foreground">Skills</h3>
-          <ul className="mt-4 flex flex-wrap gap-2">
-            {profile.skills.map((skill) => (
-              <li
-                key={skill}
-                className="rounded-full border border-border bg-muted px-3 py-1 text-xs text-muted-foreground"
-              >
-                {skill}
-              </li>
-            ))}
-          </ul>
-        </div>
+      <div className="mt-8 space-y-4">
+        {profile.bio.map((paragraph) => (
+          <p
+            key={paragraph}
+            className="text-base leading-relaxed text-muted-foreground"
+          >
+            {paragraph}
+          </p>
+        ))}
       </div>
     </section>
   );
