@@ -3,25 +3,27 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #0a0a0a;
-  --muted: #f4f4f5;
-  --muted-foreground: #52525b;
-  --border: #e4e4e7;
-  --card: #ffffff;
-  --accent: #6d28d9;
-  --accent-foreground: #ffffff;
+  --background: #020808;
+  --foreground: #f4fbfb;
+  --muted: #081315;
+  --muted-foreground: #9bb1b4;
+  --border: #173036;
+  --card: #071113;
+  --accent: #0ce3ff;
+  --accent-foreground: #020808;
+  --accent-2: #590cff;
 }
 
 .dark {
-  --background: #09090b;
-  --foreground: #fafafa;
-  --muted: #18181b;
-  --muted-foreground: #a1a1aa;
-  --border: #27272a;
-  --card: #101013;
-  --accent: #a78bfa;
-  --accent-foreground: #09090b;
+  --background: #020808;
+  --foreground: #f4fbfb;
+  --muted: #081315;
+  --muted-foreground: #9bb1b4;
+  --border: #173036;
+  --card: #071113;
+  --accent: #0ce3ff;
+  --accent-foreground: #020808;
+  --accent-2: #590cff;
 }
 
 @theme inline {
@@ -33,8 +35,8 @@
   --color-card: var(--card);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-accent-2: var(--accent-2);
+  --font-sans: var(--font-poppins);
 }
 
 html {
@@ -50,4 +52,19 @@ body {
 ::selection {
   background: var(--accent);
   color: var(--accent-foreground);
+}
+
+.hero-grid {
+  background-image:
+    radial-gradient(circle at 78% 18%, rgba(12, 227, 255, 0.16), transparent 32%),
+    radial-gradient(circle at 12% 82%, rgba(89, 12, 255, 0.14), transparent 30%),
+    linear-gradient(rgba(23, 48, 54, 0.28) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 48, 54, 0.28) 1px, transparent 1px);
+  background-size: auto, auto, 64px 64px, 64px 64px;
+}
+
+.gradient-text {
+  background: linear-gradient(100deg, #b0fffa 0%, #0ce3ff 45%, #a78bfa 100%);
+  background-clip: text;
+  color: transparent;
 }
